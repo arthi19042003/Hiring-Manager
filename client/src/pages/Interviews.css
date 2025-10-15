@@ -1,0 +1,90 @@
+/* ================================
+   Interviews Page Styling
+   ================================ */
+
+.interviews-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.interviews-container h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Interview List */
+.interview-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 20px;
+}
+
+.interview-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.interview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.interview-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.role {
+  background-color: #007bff;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.interview-details p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.mode {
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.mode.online {
+  background-color: #28a745;
+  color: white;
+}
+
+.mode.onsite {
+  background-color: #ff9800;
+  color: white;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  padding: 40px 0;
+  font-size: 1rem;
+}

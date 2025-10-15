@@ -1,0 +1,110 @@
+/* ================================
+   Inbox Page Styling
+   ================================ */
+
+.inbox-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inbox-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.empty {
+  color: #888;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Message Cards */
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 18px 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.message-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.message-card.unread {
+  border-left: 5px solid #007bff;
+  background-color: #f0f6ff;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-header h4 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.message-date {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.message-sender {
+  font-weight: 500;
+  color: #333;
+  margin: 8px 0 4px;
+}
+
+.message-text {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.status-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.status-read {
+  background-color: #e2e8f0;
+  color: #333;
+}
+
+.status-unread {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .message-header h4 {
+    font-size: 1rem;
+  }
+  .message-text {
+    font-size: 0.9rem;
+  }
+}
